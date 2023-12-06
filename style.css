@@ -211,10 +211,15 @@ footer {
 @media (min-width:1024px) {
   main {
     flex-direction: row;
+    gap: 10px;
   }
 
   .container1 {
     gap: 30px;
+  }
+
+  .paragraph {
+    width: unset;
   }
 
   .container2 {
@@ -229,10 +234,16 @@ footer {
   }
 
   .container1-item {
-    height: 43%;
+    height: 44%;
   }
 
-  .span0,
+  .span0 {
+    margin-left: 2px;
+    padding: 0 5px;
+    color: white;
+    background-color: black;
+  }
+
   .span2 {
     margin-left: 2px;
     padding: 0 5px;
@@ -243,5 +254,22 @@ footer {
 
   footer {
     margin-top: 0;
+  }
+
+  @media (min-width :1400px) {
+    body {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    main {
+      width: 1400px;
+    }
+
+    footer {
+      width: -webkit-fill-available;
+      width: fill-available;
+    }
   }
 }
